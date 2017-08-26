@@ -34,7 +34,7 @@ Run
 
 Run "Jupyter Notebook" from start menu and wait for browser to start.   
 In upper-right, click `new` and select `Python 3`.  In the first cell,
-type in `print("Hello World!` and then Ctrl-Enter to run the command.
+type in `print("Hello World!")` and then Ctrl-Enter to run the command.
 
 
 ## New Python Commands
