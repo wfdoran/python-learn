@@ -41,6 +41,7 @@ print()                   # prints something
 s = "string"              # string variable
 s.upper()                 # converts to uppercase
 t = "Hello " + "World"    # concatenates strings
+x = input()               # reads input from user
 ```
 
 ## Turtle Graphics Intro
