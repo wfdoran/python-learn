@@ -89,15 +89,15 @@ print(aa + bb)
 ## Exercise 1
 
 Which of the following is a valid python variable name?
-1 What'sUp
-2 HowAreYouDoing
-3 HavingFun?
-4 _first_timer
-5 string_number1
-6 STRONG     
-7 def
-8 DEF
-9 4daddy
+1. `What'sUp`
+1. `HowAreYouDoing`
+1. `HavingFun?`
+1. `_first_timer`
+1. `string_number1`
+1. `STRONG`     
+1. `def`
+1. `DEF`
+1. `4daddy`
 
 ## Exercise 2
 
