@@ -64,6 +64,30 @@ a % b           # remainder after division
 a ** b          # expoentation
 ```
 
+## Precedence of Operations
+
+What is `2 + 3 * 4`?  Try it!  The full set of rules is complicated, but
+for now we can start with multiplication and division come before addition and
+subtraction.  
+
+
+You can use parenthesis to specify what operation is to be done first.
+```python
+(2 + 3) * 4
+2 + (2 * 4)
+```
+
+## Floating Point Values
+
+Some integer operations (division in particular) do not result in an integer, but a floating point value.
+ 
+```python
+a = 7 / 3      # results in floating point value
+b = 7 // 3     # results in integer (rounds down)
+print(a,b)
+type(a)
+``` 
+
 ## Conversion
 
 Try
@@ -101,12 +125,6 @@ Which of the following is a valid python variable name?
 
 ## Exercise 2
 
-Fix the bugs in the following program 
-
-
-
-## Exercise 3
-
 Write a program which
 * Asks the user for two integers.
 * Print out the sum, difference, product, and division of these two integers.
@@ -117,7 +135,7 @@ b = input("Enter another integer? ")
 print(a,b)
 ```
 
-## Exercise 4
+## Exercise 3
 
 By experimenting, work out what python does when you multiply a string
 by an integer.
@@ -125,3 +143,8 @@ by an integer.
 ```python
 "hello" * 5
 ```
+
+## Exercise 4
+
+* Create a jupyter-notebook for problems on page 15.
+* Create a jupyter-notebook for problems on page 17.
