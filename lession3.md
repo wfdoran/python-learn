@@ -133,16 +133,16 @@ value it took.
 
 Write a program which 
 * Asks the user for a positive integer n.
-* Computes and prints sum = 1 + 2 + ... + n.
-* Computes and prints sum_squares = 1*1 + 2*2 + ... + n*n.
-* Computes and prints sum_cubes = 1*1*1 + 2*2*2 + ... + n*n*n.
-* Finally it print out sum * sum. 
+* Computes and prints `sum = 1 + 2 + ... + n`.
+* Computes and prints `sum_squares = 1*1 + 2*2 + ... + n*n`.
+* Computes and prints `sum_cubes = 1*1*1 + 2*2*2 + ... + n*n*n`.
+* Finally it print out `sum * sum`. 
 
 ## Exercise 2
 
 Write a program which 
 * Asks the user for an integer n >= 3.
-* Using turtle graphics, draws an n-gon.
+* Using turtle graphics, draws an n-gon with side length 100.
 
 ## Exercise 3
 
