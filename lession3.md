@@ -11,12 +11,13 @@ print("End")
 
 There are three important concepts in this short example.  The first
 is a "block" of code.  A block of code is a set of python instructions
-and commands indented at a certain level or further to the right.  A
-block ends at the first instruction with less indenting.  In this
-example, `print(i)` is a block of code with the `print("End")` ending
-the block.
+and commands which will be executed as a unit.  Python uses indention 
+(how far to the right a line starts) to signify a block.  A block starts 
+with a line indented further than the line
+above and continues so long as you stay at this or further level of indenting.
+In this example, `print(i)` is a block of code as it is indented.  
 
-The second important concept is `range`.  The range `range(10)` will take on the 
+The second important concept is `range`.  `range(10)` will take on the 
 values `{0,1,2,...,9}` one at a time.  In general `range(n)` will take on 
 the values `{0,1,2,...,n-1}`.  
 
@@ -53,12 +54,12 @@ did not use its value.  As a convention, we will use the valid but
 silly variable `_` in such situations to indicate the the value is
 not used.
 
-Here is a nested loop. 
+Here is a nested loop with nested code blocks.
 
 ```python
 for i in range(4):
     print(i, "<", end="")
-    for j in range(5)
+    for j in range(5):
         print(j, end=",")
     print(">")
 ```       
@@ -147,5 +148,5 @@ Write a program which
 ## Exercise 3
 
 * Create a jupyter-notebook for problems on page 19.
-* Create a jupyter=notebook for problems on page 21.
+* Create a jupyter-notebook for problems on page 21.
 
