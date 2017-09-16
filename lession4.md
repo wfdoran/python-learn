@@ -10,10 +10,10 @@ print(x)
 print(x[0])
 print(x[3])
 print(x[-1])
-pirnt(x[7])
+print(x[7])
 ```
 
-The syntax for a list  (`[ , , ]`) uses square braces to denote the 
+The syntax for a list  `[ , , ]` uses square braces to denote the 
 start and end of the list.  The entries in the list are separated by 
 commas.  In the above example, the variable `x` contains the entire 
 list.  Individual entries in a list can be obtained by their index, 
@@ -28,10 +28,10 @@ end.  So, `x[-1]` is the last entry.  Since `x` contains 5 entries,
 x = [1, "hello", 7.3]
 print(x)
 print(x[1])
-type(x)
-type(x[0])
-type(x[1])
-type(x[2])
+print(type(x))
+print(type(x[0]))
+print(type(x[1]))
+print(type(x[2]))
 ```
 
 A list may contain variables of different types.  
@@ -74,6 +74,16 @@ Here we start with "empty" list.  Yes that is allowed, but don't try
 print any `x[i]`.  Then we use the `append` method to add values to 
 the end of `x`.
 
+## Looping over a List
+
+Using a `for` loop, you can loop over all of the values in a list.
+
+```python
+x = [0,1,4,9,16]
+for i in x:
+    print(i)
+```
+
 ## Operations
 
 Operations read in a list and produce some value, but do not change the
@@ -107,9 +117,43 @@ Later we will learn many more operations and methods.
 
 ## Exercise 1
 
+Turtle graphics has function `position()` which tells you where the 
+turtle is.  It does not return a list.  It actually returns a tuple 
+which we will talk about later, but we can convert it with `list()`.
+
+Run the following program see what it prints out.  
+
+```python
+from turtle import *
+shape("turtle")
+print(list(position()))
+for _ in range(4):
+    forward(100)
+    right(90)
+    print(list(position()))
+```
+
+Your assignment is to write a program which has a turtle generate a hexagon
+and records the coordinates at each corner.  Then your program should print 
+the x-coordinates of the corners as a list followed by the y-coordinates 
+as a list.
+
 ## Exercise 2
+
+Give a list, figure out a way to loop over a list and print both the index and the value.
+For `x = [0,1,4,9,16]`, the output should be 
+
+```
+0 0
+1 1
+2 4
+3 9
+4 16
+```
 
 ## Exercise 3
 
+* Create a jupyter-notebook for problems on page 23.
+* Create a jupyter-notebook for problems on page 25.
 
 
