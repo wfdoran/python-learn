@@ -20,15 +20,22 @@ comparision operations are
 |      |           | `6 == 5` => `False` |
 | `!=` | not equal | `6 != 5` => `True`  |
 |      |           | `5 != 5` => `False` |
-|
+
 
 ### Comparing Floats
+
+```python
+print(0.33333333333333333333333 == 1/3)
+print(0.33333333 == 1/3)
+```
 
 ### Comparing Strings
 
 ### Comparing Lists
 
 ## if-then-else
+
+## and, or, not
 
 ## exercise
 
