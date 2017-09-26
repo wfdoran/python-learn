@@ -14,6 +14,8 @@ A boolean variable takes on the value `True` or `False` and
 indicates whether an expression is correct.  The basic 
 comparision operations are
 
+| operator | description | examples     |
+| ---------| ----------- | ---------    |
 | `==` | equal     | `5 == 5` => `True`  |
 |      |           | `6 == 5` => `False` |
 | `!=` | not equal | `6 != 5` => `True`  |
