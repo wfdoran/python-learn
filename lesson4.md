@@ -1,8 +1,8 @@
-# Lession 4
+# Lesson 4
 
 ## Lists
 
-A list in python is an ordered array of variables.
+A list in python is an ordered array of things (variables).
 
 ```python
 x = [0,1,4,9,16]
@@ -97,6 +97,13 @@ print(sum(x))
 
 The syntax for an operations is `value = operation( list_var )`.  
 
+What do you think the following will print out?
+```python
+x = [0,1,4,9,16]
+for i in range(len(x)):
+    print i, x[i]
+```
+
 ## Methods  
 
 Method alter the list.  We have already seen `x.append()`.  Here are two
@@ -117,39 +124,35 @@ Later we will learn many more operations and methods.
 
 ## Exercise 1
 
-Turtle graphics has function `position()` which tells you where the 
-turtle is.  It does not return a list.  It actually returns a tuple 
-which we will talk about later, but we can convert it with `list()`.
-
-Run the following program see what it prints out.  
-
+Given the following list of `x` and `y` coordinates, 
 ```python
-from turtle import *
-shape("turtle")
-print(list(position()))
-for _ in range(4):
-    forward(100)
-    right(90)
-    print(list(position()))
+x = [0, 3, 9, 14, 13, 12, 13, 10, 4, 3, 1, -4, -6, -6, -8, -9, -13, -11, -14, -12, -9, -4, -2, 0]
+y = [0, -1, -2, 3, -1, -3, -6, -4, -5, -7, -6, -6, -5, -10, -8, -5, -4, -3, -2, -1, 0, 0, 4, 0]
 ```
-
-Your assignment is to write a program which has a turtle generate a hexagon
-and records the coordinates at each corner.  Then your program should print 
-the x-coordinates of the corners as a list followed by the y-coordinates 
-as a list.
+print them out with one `(x,y)` pair on each one.  First three lines should be 
+```
+0 0
+3 -1
+9 -2
+```
 
 ## Exercise 2
 
-Give a list, figure out a way to loop over a list and print both the index and the value.
-For `x = [0,1,4,9,16]`, the output should be 
+First play with the turtle gphaics `goto` command. 
+```python
+from turtle import *
+goto (10,20)
+goto (13,-8)
+goto (-24,16)
+```
 
+Now turtle graphics, draw the figure those corners are given by the following `x` and `y` coordinates.
+```python
+x = [0, 3, 9, 14, 13, 12, 13, 10, 4, 3, 1, -4, -6, -6, -8, -9, -13, -11, -14, -12, -9, -4, -2, 0]
+y = [0, -1, -2, 3, -1, -3, -6, -4, -5, -7, -6, -6, -5, -10, -8, -5, -4, -3, -2, -1, 0, 0, 4, 0]
 ```
-0 0
-1 1
-2 4
-3 9
-4 16
-```
+You might want to multiply everything by 10 to get a better picture.
+
 
 ## Exercise 3
 
