@@ -101,7 +101,7 @@ What do you think the following will print out?
 ```python
 x = [0,1,4,9,16]
 for i in range(len(x)):
-    print i, x[i]
+    print(i, x[i])
 ```
 
 ## Methods  
