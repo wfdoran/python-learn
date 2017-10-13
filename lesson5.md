@@ -11,8 +11,13 @@ print(type(x))
 ```
 
 A boolean variable takes on the value `True` or `False` and 
+<<<<<<< HEAD
 indicates whether an expression is correct.  The basic 
 comparison operations are given the following table. 
+=======
+indicates whether an expression is correct or wrong.  The basic 
+comparision operations are given the following table. 
+>>>>>>> 94c4471d6b6b3ff7916da153fc5079a0e7371f42
 
 | operator | description      | examples            |
 | ---------| ---------------- | -----------------   |
@@ -31,7 +36,6 @@ comparison operations are given the following table.
 
 ### Comparing Floats
 
-
 All of comparisons above involve integers.  Things can get 
 more complicated with other variable types.  
 
@@ -40,7 +44,11 @@ print(0.33333333333333333333333 == 1/3)
 print(0.33333333 == 1/3)
 ```
 
+<<<<<<< HEAD
 What happened here?  The precision of the floating point number
+=======
+What happend here?  The precision of the floating piont number
+>>>>>>> 94c4471d6b6b3ff7916da153fc5079a0e7371f42
 matters.  As general rule, you should not compare floats for 
 equality.  You can use less than and greater than without 
 worry, but equality is tricky.  Instead, test if two floats
@@ -83,12 +91,12 @@ letters.
 ## if-then-else
 
 You can use a boolean to "branch".  The code will follow a
-different path based the whether the boolean expresion is
+different path based the whether the boolean expression is 
 True or False.  
 
 To understand the following code, remember that `i % 2` is 
 `i` mod 2 or the remainder when you divide `i` by 2.  When
-`i` is odd, the remainder is 1.  When `i` is even, the remainder
+`i` is odd, the remainder is 1.  When `i` is even, the remainder 
 is 0.
 
 ```python
