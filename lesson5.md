@@ -12,7 +12,7 @@ print(type(x))
 
 A boolean variable takes on the value `True` or `False` and 
 indicates whether an expression is correct.  The basic 
-comparision operations are given the following table. 
+comparison operations are given the following table. 
 
 | operator | description      | examples            |
 | ---------| ---------------- | -----------------   |
@@ -32,14 +32,14 @@ comparision operations are given the following table.
 ### Comparing Floats
 
 All of comparisons we have done involve integers.  Things can get 
-more complicated with other variable types.  
+more complicated when comparing other variable types.  
 
 ```python
 print(0.33333333333333333333333 == 1/3)
 print(0.33333333 == 1/3)
 ```
 
-What happend here?  The persion of the floating piont number
+What happened here?  The precision of the floating point number
 matters.  As general rule, you should not compare floats for 
 equality.  You can use less than and greater than without 
 worry, but equality is tricky.  
@@ -62,12 +62,21 @@ z = "hello world"
 print(q == z)
 ```
 
+When comparing strings for equality, they have to match exactly.
+When comparing for inequality, look for the first position where 
+the strings differ.
+
 ```python
 print("abc" > "aaa")
 print("aaaa" > "aaa")
 print("zzz" > "aaa")
 print("ZZZ" > "aaa")
 ```
+
+Now the funny thing is that capital letters are considered smaller 
+than lower-case letters.  The exact order of characters in strings 
+may depend on the language.  
+
 ## if-then-else
 
 ```python
