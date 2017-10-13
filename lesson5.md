@@ -11,7 +11,7 @@ print(type(x))
 ```
 
 A boolean variable takes on the value `True` or `False` and 
-indicates whether an expression is correct.  The basic 
+indicates whether an expression is correct or wrong.  The basic 
 comparision operations are given the following table. 
 
 | operator | description      | examples            |
@@ -31,7 +31,7 @@ comparision operations are given the following table.
 
 ### Comparing Floats
 
-All of comparisons we have done involve integers.  Things can get 
+All of comparisons above involve integers.  Things can get 
 more complicated with other variable types.  
 
 ```python
@@ -39,10 +39,11 @@ print(0.33333333333333333333333 == 1/3)
 print(0.33333333 == 1/3)
 ```
 
-What happend here?  The persion of the floating piont number
+What happend here?  The precision of the floating piont number
 matters.  As general rule, you should not compare floats for 
 equality.  You can use less than and greater than without 
-worry, but equality is tricky.  
+worry, but equality is tricky.  Instead, test if two floats
+are close to each other.
 
 ```python
 print(1.000001 > 1.0)
@@ -62,24 +63,42 @@ z = "hello world"
 print(q == z)
 ```
 
+Two strings are the equal if they are the same length and 
+contain exactly the same characters.  If they differ, the 
+first character at whcih they differ is used to determine
+which is greater.  This is call lexigraphic ordering. 
+
 ```python
 print("abc" > "aaa")
 print("aaaa" > "aaa")
 print("zzz" > "aaa")
 print("ZZZ" > "aaa")
 ```
+
+A funny thing about lexigraphic ordering on most English 
+computer system, capital letters are smaller than lower-case 
+letters.   
+
 ## if-then-else
 
+You can use a boolean to "branch".  The code will follow a
+different path based the whether the boolean expresion is 
+True or False.  
+
+To understand the following code, remember that `i % 2` is 
+`i` mod 2 or the remainder when you divide `i` by 2.  When
+`i` is odd, the remainder is 1.  When `i` is even, the remainder 
+is 0.
+
 ```python
-evens = 0
-odds = 0
 for i in range(10):
     if i % 2 == 0:
-       evens = evens + i
+        print(i, "is even")
     else:
-       odds = odds + i
-print(evens, odds)
+        print(i, "is odd")
 ```
+
+
 
 ## and, or, not
 
@@ -115,6 +134,10 @@ print(total)
 Create square spiral
 
 ## exercise 2
+
+Write a program which reads in a value `n` from the user and 
+adds up all of the odd numbers less than or equal to `n`.  
+This value should be printed out.
 
 ## exercise 3
 
