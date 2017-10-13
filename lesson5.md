@@ -83,12 +83,12 @@ letters.
 ## if-then-else
 
 You can use a boolean to "branch".  The code will follow a
-different path based the whether the boolean expresion is 
+different path based the whether the boolean expresion is
 True or False.  
 
 To understand the following code, remember that `i % 2` is 
 `i` mod 2 or the remainder when you divide `i` by 2.  When
-`i` is odd, the remainder is 1.  When `i` is even, the remainder 
+`i` is odd, the remainder is 1.  When `i` is even, the remainder
 is 0.
 
 ```python
