@@ -162,7 +162,7 @@ for i in range(100):
     right(___)
 ```
 
-![sprial](https://github.com/wfdoran/python-learn/lesson5.png)
+![sprial](https://github.com/wfdoran/python-learn/blob/master/lesson5.png)
 
 ## exercise 2
 
