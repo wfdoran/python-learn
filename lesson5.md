@@ -2,6 +2,8 @@
 
 ## Boolean Variables
 
+Time to introduce a new variable type.
+
 ```python
 x = 5 > 3
 y = 5 > 8
@@ -10,14 +12,9 @@ print(x,y,z)
 print(type(x))
 ```
 
-A boolean variable takes on the value `True` or `False` and 
-<<<<<<< HEAD
-indicates whether an expression is correct.  The basic 
-comparison operations are given the following table. 
-=======
-indicates whether an expression is correct or wrong.  The basic 
-comparision operations are given the following table. 
->>>>>>> 94c4471d6b6b3ff7916da153fc5079a0e7371f42
+A boolean variable takes on the value `True` or `False` and
+indicates whether an expression is correct.  The basic
+comparison operations are given the following table.
 
 | operator | description      | examples            |
 | ---------| ---------------- | -----------------   |
@@ -36,21 +33,17 @@ comparision operations are given the following table.
 
 ### Comparing Floats
 
-All of comparisons above involve integers.  Things can get 
-more complicated with other variable types.  
+All of comparisons above involve integers.  Things can get
+more complicated with other variable types.
 
 ```python
 print(0.33333333333333333333333 == 1/3)
 print(0.33333333 == 1/3)
 ```
 
-<<<<<<< HEAD
 What happened here?  The precision of the floating point number
-=======
-What happend here?  The precision of the floating piont number
->>>>>>> 94c4471d6b6b3ff7916da153fc5079a0e7371f42
-matters.  As general rule, you should not compare floats for 
-equality.  You can use less than and greater than without 
+matters.  As general rule, you should not compare floats for
+equality.  You can use less than and greater than without
 worry, but equality is tricky.  Instead, test if two floats
 are close to each other.
 
@@ -108,8 +101,9 @@ for i in range(10):
 ```
 
 
+## Boolean Algebra
 
-## and, or, not
+Boolean variables can be combined with the operations `and`, `or`, and `not`. 
 
 ```python
 print(True and True)
@@ -130,17 +124,45 @@ print(not True)
 print(not False)
 ```
 
+Putting it together, we can do things like add up all of the 
+numbers less than 100 which are divisible by 2 or 7, but 
+divisible by 14.
+
 ```python
 total = 0
 for i in range(100):
-    if (i % 2 == 0) and (i % 7 == 0) and (not (i % 14) == 0):
-       total += i
+    if ((i % 2 == 0) or (i % 7 == 0)) and (not (i % 14) == 0):
+        total += i
 print(total)
+```
+
+You can show that [DeMorgan's Law](https://en.wikipedia.org/wiki/De_Morgan%27s_laws) which says `not (a or b)`
+always equals `(not a) and (not b)`.
+
+```python
+for a in [True, False]:
+    for b in [True, False]:
+        left = not (a or b)
+        right = (not a) and (not b)
+        print(left, right)
 ```
 
 ## exercise 1 
 
-Create square spiral
+Fill in the missing parts in the following code to produce a spiral.
+
+```python
+from turtle import *
+reset()
+edge_len = 50
+for i in range(100):
+    if (i % ___) == 0:
+        edge_len = edge_len + ____
+    forward(edge_len)
+    right(___)
+```
+
+![sprial](https://github.com/wfdoran/python-learn/lesson5.png)
 
 ## exercise 2
 
@@ -150,5 +172,7 @@ This value should be printed out.
 
 ## exercise 3
 
+* Create a jupyter-notebook for problems on page 27.
+* Create a jupyter-notebook for problems on page 29.
 
 
